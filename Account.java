@@ -14,10 +14,19 @@ Account(String cname, String cid) {
   customerID = cid;
 }
 
+//Function for Depositin money
 void deposit(int amount) {
   if (amount != 0) {
     balance = balance + amount;
     previousTransaction = amount;
   }
 
+}
+
+//Function for withdrawing money
+void withdraw(int amount) {
+  if (amount != 0) {
+    balance = balance - amount;
+    previousTransaction = amount;
+  }
 }
