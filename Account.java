@@ -21,3 +21,11 @@ void deposit(int amount) {
   }
 
 }
+
+//function to withdraw money from account
+void withdraw(int amount) {
+  if (amount != 0) {
+    balance = balance - amount;
+    previousTransaction = -amount;
+  }
+}
