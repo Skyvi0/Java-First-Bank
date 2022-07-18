@@ -29,3 +29,14 @@ void withdraw(int amount) {
     previousTransaction = -amount;
   }
 }
+
+//function showing previous transaction
+void getPreviousTransaction() {
+  if (previousTransaction > 0) {
+    System.out.println("Deposited $" + previousTransaction);
+  } else if (previousTransaction < 0) {
+    System.out.println("Withdrew $" + Math.abs(previousTransaction));
+  } else {
+    System.out.println("No transaction was made.");
+  }
+}
