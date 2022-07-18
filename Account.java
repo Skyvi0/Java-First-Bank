@@ -40,3 +40,10 @@ void getPreviousTransaction() {
     System.out.println("No transaction was made.");
   }
 }
+
+void calculateInterest(int years) {
+  double interestRate = balance * 0.05;
+  double newBalance = (balance * interestRate * years) + balance;
+  System.out.println("The interest rate is " + (100 * interestRate) + "%");
+  System.out.println("After " + years + " years, the balance is $" + newBalance);
+}
